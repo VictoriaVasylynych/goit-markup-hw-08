@@ -1,0 +1,33 @@
+.work-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.work-list {
+  display: flex;
+  justify-content: space-between;
+}
+.work-item{
+  position: relative;
+}
+.work-examples-overlay{
+ position: absolute;
+ bottom: 0;
+ font-weight: bold;
+ font-size: 14px;
+ line-height: 1.14;
+ text-align: center;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ color: #FFFFFF;
+ background: rgba(47, 48, 58, 0.8);
+ padding-top: 27px;
+ width: 100%;
+ height: 70px;
+ overflow: auto;
+ padding-bottom: 27px;
+}

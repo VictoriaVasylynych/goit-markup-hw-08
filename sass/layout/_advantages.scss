@@ -1,0 +1,32 @@
+.about-list {
+  display: flex;
+  margin-left: -30px;
+  align-items: center;
+}
+.about-item {
+  margin-left: 30px;
+}
+.about-image{
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color:#F5F4FA;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.about-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+.about-descr {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
