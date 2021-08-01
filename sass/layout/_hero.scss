@@ -2,17 +2,18 @@
   max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(
-    to right, rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ), 
-   url(../images/overlay/overlay.jpg);
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/overlay/overlay.jpg);
   background-color: #2f303a;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center ;
+  background-position: center;
 }
 .hero-container {
   padding-top: 200px;
@@ -48,9 +49,9 @@
   padding-right: 32px;
   padding-bottom: 10px;
   border-radius: 4px;
-   &:hover,
-   &:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-}
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
 }
