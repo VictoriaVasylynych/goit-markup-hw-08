@@ -715,6 +715,22 @@ body {
   }
 }
 
+.work-menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .work-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-menu {
+    display: block;
+  }
+}
+
 .work-title {
   font-weight: bold;
   font-size: 36px;
@@ -743,7 +759,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   width: 100%;
@@ -752,29 +768,33 @@ body {
   padding-bottom: 27px;
 }
 
-.team {
-  background: #f5f4fa;
-}
-
-.team__menu {
-  display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.team__item {
-  margin-left: 30px;
-  margin-top: 30px;
+@media screen and (min-width: 480px) {
+  .team__item {
+    margin-top: 30px;
+  }
 }
 
 .team-title {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
+  color: #212121;
+}
+
+.team {
+  background: #f5f4fa;
+}
+
+.team__about {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team__name {
@@ -795,16 +815,6 @@ body {
   color: var(--text-color);
 }
 
-.team__about {
-  background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
 .social-list {
   display: flex;
   justify-content: space-between;
@@ -812,7 +822,7 @@ body {
 }
 
 .social-list__icon {
-  fill: #C4C4C4;
+  fill: #c4c4c4;
 }
 
 .social-list__link:hover .social-list__icon,
@@ -833,6 +843,27 @@ body {
 
 .social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .team__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .clients-title {
