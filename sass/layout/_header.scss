@@ -13,6 +13,19 @@
 .contact {
   display: none;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .header-container {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+}
+.header {
+  // padding-bottom: 32px;
+  // padding-top: 32px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -199,7 +212,7 @@
       height: 4px;
       left: 0;
       border-radius: 2px;
-      bottom: -32px;
+      bottom: -33px;
       background-color: #2196f3;
     }
   }
@@ -248,6 +261,7 @@
     line-height: 1.14;
   }
 }
+
 //.header {
 //  padding-bottom: 32px;
 //  padding-top: 32px;

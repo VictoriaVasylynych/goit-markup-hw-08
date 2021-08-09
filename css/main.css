@@ -298,6 +298,19 @@ body {
   display: none;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .header-container {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+}
+
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -514,7 +527,7 @@ body {
     height: 4px;
     left: 0;
     border-radius: 2px;
-    bottom: -32px;
+    bottom: -33px;
     background-color: #2196f3;
   }
   .contact__link {
@@ -651,7 +664,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px), (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1142,10 +1155,15 @@ body {
   }
 }
 
-.filter-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .filter-item:first-child {
+    margin-bottom: 15px;
+  }
 }
 
 .filter-item:not(:first-child) {
@@ -1180,16 +1198,29 @@ body {
   color: #ffffff;
 }
 
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+@media screen and (min-width: 768px) {
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
-.portfolio-item {
-  margin-left: 30px;
-  margin-top: 30px;
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio {
+    display: block;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-link {
@@ -1238,7 +1269,7 @@ body {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 63px 24px 63px 24px;
   top: 100%;
   left: 0;
@@ -1252,5 +1283,26 @@ body {
 .portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
   transform: translateY(-100%);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .portfolio-item {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
